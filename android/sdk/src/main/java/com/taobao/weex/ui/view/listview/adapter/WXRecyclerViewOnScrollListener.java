@@ -84,6 +84,13 @@ public class WXRecyclerViewOnScrollListener extends RecyclerView.OnScrollListene
           listener.get().onLoadMore(bottomOffset);
         }
       }
+
+      if (mCurrentScrollState == RecyclerView.SCROLL_STATE_SETTLING) {
+        if(recyclerView != null) {
+          recyclerView.stopScroll();
+        }
+
+      }
     }
   }
 
