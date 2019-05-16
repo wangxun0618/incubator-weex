@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
                     #'weex_core/Source/base/third_party',
                     #'weex_core/Source/base/message_loop',
                     'weex_core/Source/base/time_point.*',
-                    'weex_core/Source/base/time_utils.*',
+                    #'weex_core/Source/base/time_utils.*',
                     'weex_core/Source/base/time_unit.*',
                     'weex_core/Source/third_party/IPC',
                     'weex_core/Source/core/network/android/',
