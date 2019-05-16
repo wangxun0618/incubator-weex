@@ -32,10 +32,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   # use for public
-   s.source =  {
-    :git => 'https://github.com/apache/incubator-weex.git',
-    :tag => #{s.version}
-   }
+   #s.source =  {
+    #:git => 'https://github.com/apache/incubator-weex.git',
+    #:tag => #{s.version}
+   #}
+
+  s.source = { :git => 'https://github.com/wangxun0618/incubator-weex.git', :tag => "v#{s.version}", :submodules => true }
 
   # use for playground
   #s.source =  { :path => '.'}
@@ -51,9 +53,9 @@ Pod::Spec.new do |s|
                     'weex_core/Source/base/base64',
                     'weex_core/Source/base/crash',
                     'weex_core/Source/base/utils',
-                    'weex_core/Source/base/thread',
-                    'weex_core/Source/base/third_party',
-                    'weex_core/Source/base/message_loop',
+                    #'weex_core/Source/base/thread',
+                    #'weex_core/Source/base/third_party',
+                    #'weex_core/Source/base/message_loop',
                     'weex_core/Source/base/time_point.*',
                     'weex_core/Source/base/time_utils.*',
                     'weex_core/Source/base/time_unit.*',
