@@ -32,15 +32,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   # use for public
-   #s.source =  {
-    #:git => 'https://github.com/apache/incubator-weex.git',
-    #:tag => #{s.version}
-   #}
-
-  s.source = { :git => 'https://github.com/wangxun0618/incubator-weex.git', :tag => "v#{s.version}", :submodules => true }
+  # s.source =  {
+  #  :git => 'https://github.com/apache/incubator-weex.git',
+  #  :tag => #{s.version}
+  # }
 
   # use for playground
-  #s.source =  { :path => '.'}
+  s.source =  { :path => '.' }
 
   s.source_files = 'ios/sdk/WeexSDK/Sources/**/*.{h,m,mm,c,cpp,cc}',
                     'weex_core/Source/base/**/*.{h,hpp,m,mm,c,cpp,cc}',
@@ -53,11 +51,11 @@ Pod::Spec.new do |s|
                     'weex_core/Source/base/base64',
                     'weex_core/Source/base/crash',
                     'weex_core/Source/base/utils',
-                    #'weex_core/Source/base/thread',
-                    #'weex_core/Source/base/third_party',
-                    #'weex_core/Source/base/message_loop',
+                    'weex_core/Source/base/thread',
+                    'weex_core/Source/base/third_party',
+                    'weex_core/Source/base/message_loop',
                     'weex_core/Source/base/time_point.*',
-                    #'weex_core/Source/base/time_utils.*',
+                    'weex_core/Source/base/time_utils.*',
                     'weex_core/Source/base/time_unit.*',
                     'weex_core/Source/third_party/IPC',
                     'weex_core/Source/core/network/android/',
